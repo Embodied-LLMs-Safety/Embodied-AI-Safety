@@ -84,7 +84,6 @@ def top_view_shot(check=False):
     time.sleep(0.3)
     success, img_bgr = cap.read()
 
-    print('    保存至temp/vl_now.jpg')
     cv2.imwrite('temp/vl_now.jpg', img_bgr)
 
     cv2.destroyAllWindows()

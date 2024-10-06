@@ -8,7 +8,7 @@ import wave
 
 tts_ab = appbuilder.TTS()
 
-def tts(TEXT='I am Xiaobai', tts_wav_path='temp/tts.wav'):
+def tts(TEXT='I am a robot', tts_wav_path='temp/tts.wav'):
     '''
     Speech synthesis TTS, generate wav audio file
     '''

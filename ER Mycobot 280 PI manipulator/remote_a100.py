@@ -16,7 +16,7 @@ def execute_remote_command(server_ip, username, password, command):
     
     return output, error
 
-server_ip = '222.20.126.214'
+server_ip = 'xxxx'
 username = 'xxx'
 password = '258147963'
 command = 'python ~/aaaPROJECTS/moondream/inference.py'
