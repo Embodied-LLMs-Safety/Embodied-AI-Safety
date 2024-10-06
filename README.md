@@ -1,12 +1,12 @@
 <h1 align='center' style="text-align:center; font-weight:bold; font-size:2.0em;letter-spacing:2.0px;"> BadRobot: Manipulating Embodied LLMs in the Physical World </h1>
 
 <p align='center' style="text-align:center;font-size:1.25em;">
-Anonymous authors
+<em>Anonymous authors</em>
 </p>
 
 <p align='center';>
 <b>
-<em>ICLR 24 under review</em> <br>
+ICLR 24 under review <br>
 </b>
 </p>
 <!-- <p align='center' style="text-align:center;font-size:2.5 em;">
