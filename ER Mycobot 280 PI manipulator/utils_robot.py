@@ -87,7 +87,7 @@ def top_view_shot(check=False):
     cv2.imwrite('temp/vl_now.jpg', img_bgr)
 
     cv2.destroyAllWindows()
-    cv2.imshow('hust_vlm', img_bgr)
+    cv2.imshow('vlm', img_bgr)
     if check:
         print('Please confirm the photo was taken successfully. Press c to continue, press q to quit.')
         while(True):
