@@ -43,9 +43,7 @@ pip install -r requirements.txt
 
 - Obtain an [OpenAI API](https://openai.com/blog/openai-api) key, and put it inside the utils_llm.py.
 
-## Running Demo
 
-Demo code is at `agent_go.py`.
 
 ## Code Structure
 
@@ -74,6 +72,9 @@ Next, we will analyze the code structure using the `UR3e Robot manipulator` dist
 - **`utils_vlm_move.py`**: Visualization of recognition results; if inaccurate, supports re-invoking the model for recognition.
 - **`utils_vlm_vqa.py`**: visual question and answer on the visual scene.
 
+
+## Running Demo 
+ Demo code is at `agent_go.py`.
 
 
 **We are excitedly working hard to update this repository and enhance the corresponding code😁. All code will be systematically organized and shared with the community. Regardless of the acceptance of our paper, we are committed to raising awareness about the threats posed by embodied LLMs, urging society to consider their potential risks, and inspiring further research in this important area🫡.** 
