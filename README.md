@@ -32,6 +32,10 @@ conda create -n embodied-safety python=3.10
 conda activate embodied-safety
 ```
 
+- Enable audio support:
+```Shell
+sudo apt-get install portaudio19-dev
+```
 - Install other dependencies:
 ```Shell
 pip install -r requirements.txt
@@ -49,7 +53,10 @@ Demo code is at `agent_go.py`.
 
 - **`Physical_Word_Malicious_Queries.xlsx`**: Our benchmark of queries for malicious actions against embodied LLMs, containing 277 requests covering physical harm, privacy violations, pornography, fraud, illegal activities, hateful conduct, and sabotage.
 
-We developed a prototype of the minimal embodied LLM system on two robotic arms (`ER Mycobot 280 PI manipulator` and `UR3e Robot manipulator`), sharing consistent core code but differing in packaging and calls for movement control, tool interface, and I/O due to varying arm models. Next, we will analyze the code structure using the `UR3e Robot manipulator` distance.
+We developed a prototype of the minimal embodied LLM system on two robotic arms (`ER Mycobot 280 PI` manipulator and `UR3e` manipulator), sharing consistent core code but differing in movement control, tool interface, I/O, and processing units. Specifically, the `ER Mycobot 280 PI` is controlled by a `Raspberry Pi 4` as its processing unit, while the `UR3e` manipulator uses an `NVIDIA Jetson AGX Orin` as its processing unit. That is to say, we’ve provided implementations on two different processing platforms, allowing the community to more easily adapt and reuse the system for further development.
+
+
+Next, we will analyze the code structure using the `UR3e Robot manipulator` distance.
 
 - **`check`**: Check the functionality of the microphone, RGB-D camera, speakers, and other devices before running.
 - **`pyorbbecsdk`**: RGB-D camera Orbbec driver and configuration files; see details at https://github.com/orbbec/pyorbbecsdk.
@@ -72,6 +79,12 @@ We developed a prototype of the minimal embodied LLM system on two robotic arms 
 **We are excitedly working hard to update this repository and enhance the corresponding code😁. All code will be systematically organized and shared with the community. Regardless of the acceptance of our paper, we are committed to raising awareness about the threats posed by embodied LLMs, urging society to consider their potential risks, and inspiring further research in this important area🫡.** 
 
 **Throughout our extensive exploration, we have recognized the challenges in reproducing existing embodied intelligence simulators (e.g., Voxposer). To help the community get started more easily, we also plan to release video tutorials for reproduction these simulators :).**
+
+
+## Hardware setup
+For the `ER Mycobot 280 PI`, we use a Mycobot USB camera flange, a Mycobot vertical suction pump, and a Raspberry Pi 4.
+
+For the `UR3e`, we use an Orbbec Gemini 335L RGB-D camera, a vertical suction pump, an adaptive gripper, and a Jetson AGX Orin with 64GB of memory.
 
 <br><br>
 

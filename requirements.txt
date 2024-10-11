@@ -1,0 +1,12 @@
+numpy==1.26.4
+opencv-python
+appbuilder-sdk
+Pillow
+qianfan
+pyaudio
+pybind11==2.11.0
+pybind11-global==2.11.0
+plyfile
+open3d
+openai
+redis
