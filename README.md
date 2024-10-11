@@ -63,7 +63,8 @@ Next, we will analyze the code structure using the `UR3e Robot manipulator` dist
 - **`check`**: Check the functionality of the microphone, RGB-D camera, speakers, and other devices before running.
 - **`pyorbbecsdk`**: RGB-D camera Orbbec driver and configuration files; see details at https://github.com/orbbec/pyorbbecsdk.
 - **`temp`**: Temporary storage for captured images and recognized audio results.
-- **`API_KEY.py`**: APIs for speech recognition (ASR) and text-to-speech (TTS) modules.
+- **`API_KEY.py`**: APIs for speech recognition (ASR) and text-to-speech (TTS) modules. We use the [Baidu AI Cloud Qianfan Platform's ASR interface](https://intl.cloud.baidu.com/) and [ChatTTS's TTS model](https://github.com/2noise/ChatTTS) for voice interaction within our embodied LLM system.
+
 - **`agent_go.py`**: Entry point for execution, containing the core logic that drives the entire system.
 - **`depth_estimate.py`**: depth data from the depth camera.
 - **`utils_agent.py`**: System prompts that enable LLM to serve as a robot agent.
@@ -91,6 +92,7 @@ Next, we will analyze the code structure using the `UR3e Robot manipulator` dist
 For the `ER Mycobot 280 PI`, we use a Mycobot USB camera flange, a Mycobot vertical suction pump, and a Raspberry Pi 4.
 
 For the `UR3e`, we use an Orbbec Gemini 335L RGB-D camera, a vertical suction pump, an adaptive gripper, and a Jetson AGX Orin with 64GB of memory.
+
 
 <br><br>
 
