@@ -38,14 +38,14 @@ sudo apt-get install portaudio19-dev
 ```
 
 
-See [Instructions](https://github.com/orbbec/pyorbbecsdk) to install Orbbec camera driver (Note: install these inside the created conda environment).
+- See [Instructions](https://github.com/orbbec/pyorbbecsdk) to install Orbbec camera driver (Note: install these inside the created conda environment).
 
 - Install other dependencies:
 ```Shell
 pip install -r requirements.txt
 ```
 
-- Obtain an [OpenAI API](https://openai.com/blog/openai-api) key, and put it inside the utils_llm.py.
+- Obtain an [OpenAI API](https://openai.com/blog/openai-api) key, and put it inside the ER Mycobot 280 PI manipulator/utils_llm.py.
 
 
 
