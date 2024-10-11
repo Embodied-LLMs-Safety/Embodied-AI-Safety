@@ -45,7 +45,7 @@ sudo apt-get install portaudio19-dev
 pip install -r requirements.txt
 ```
 
-- Obtain an [OpenAI API](https://openai.com/blog/openai-api) key, and put it inside the ER Mycobot 280 PI manipulator/utils_llm.py.
+- Obtain an [OpenAI API](https://openai.com/blog/openai-api) key, and put it inside the `ER Mycobot 280 PI manipulator/utils_llm.py`.
 
 
 
@@ -81,6 +81,7 @@ Next, we will analyze the code structure using the `UR3e Robot manipulator` dist
  Demo code is at `agent_go.py`.
 
 
+## Ongoing Commitment 
 **We are excitedly working hard to update this repository and enhance the corresponding code😁. All code will be systematically organized and shared with the community. Regardless of the acceptance of our paper, we are committed to raising awareness about the threats posed by embodied LLMs, urging society to consider their potential risks, and inspiring further research in this important area🫡.** 
 
 **Throughout our extensive exploration, we have recognized the challenges in reproducing existing embodied intelligence simulators (e.g., Voxposer). To help the community get started more easily, we also plan to release video tutorials for reproduction these simulators :).**
