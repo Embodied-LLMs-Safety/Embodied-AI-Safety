@@ -60,6 +60,7 @@ pip install -r requirements.txt
 ### Running Demo in the digital world
 Demo code is at `digital_evaluation/main.py`.
 
+---
 
 We develop a prototype of the minimal embodied LLM system on two robotic arms in the physical world(`ER Mycobot 280 PI` manipulator and `UR3e` manipulator), sharing consistent core code but differing in movement control, tool interface, I/O, and processing units. Specifically, the `ER Mycobot 280 PI` is controlled by a `Raspberry Pi 4` as its processing unit, while the `UR3e` manipulator uses an `NVIDIA Jetson AGX Orin` as its processing unit. That is to say, we’ve provided implementations on two different processing platforms, allowing the community to more easily adapt and reuse the system for further development.
 
@@ -82,7 +83,7 @@ Next, we will analyze the code structure using the `UR3e Robot manipulator` dist
 - **`utils_vlm_move.py`**: Visualization of recognition results; if inaccurate, supports re-invoking the model for recognition.
 - **`utils_vlm_vqa.py`**: visual question and answer on the visual scene.
 
-
+---
 ### Running Demo in the physical world
  Demo code is at `agent_go.py`.
 
