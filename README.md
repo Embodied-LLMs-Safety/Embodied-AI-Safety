@@ -57,7 +57,7 @@ pip install -r requirements.txt
 
 - **`digital_evaluation`**: Three distinct attack methods implemented for BadRobot, used for validation in the digital world.
 
-### Running Demo in the digital world
+### Running Demo in the Digital World
 Demo code is at `digital_evaluation/main.py`.
 
 ---
@@ -84,8 +84,8 @@ Next, we will analyze the code structure using the `UR3e Robot manipulator` dist
 - **`utils_vlm_vqa.py`**: visual question and answer on the visual scene.
 
 ---
-### Running Demo in the physical world
- Demo code is at `agent_go.py`.
+### Running Demo in the Physical World
+ Demo code is at `UR3e Robot manipulator/agent_go.py`.
 
 
 ## Ongoing Commitment 
