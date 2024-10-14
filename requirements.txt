@@ -10,3 +10,4 @@ plyfile
 open3d
 openai
 redis
+openpyxl
