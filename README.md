@@ -90,8 +90,14 @@ Next, we will analyze the code structure using the `UR3e Robot manipulator` dist
 - **`utils_vlm_vqa.py`**: visual question and answer on the visual scene.
 
 ---
-### Running Demo in the Physical World
- Demo code is at `UR3e Robot manipulator/agent_go.py`.
+### Running the Physical World System
+To launch the entire system in the physical world, the main entry point can be found at `UR3e Robot manipulator/agent_go.py`.
+To start the system, simply run the following command in your terminal. Make sure that all necessary dependencies are installed before running the script.
+```bash
+cd python UR3e Robot manipulator
+python agent_go.py
+```
+
 
 
 ## Ongoing Commitment 
