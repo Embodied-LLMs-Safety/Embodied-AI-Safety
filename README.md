@@ -91,13 +91,16 @@ Next, we will analyze the code structure using the `UR3e Robot manipulator` dist
 
 ---
 ### Running the Physical World System
-To launch the entire system in the physical world, the main entry point can be found at `UR3e Robot manipulator/agent_go.py`.
+To launch the entire system in the physical world, the main entry point can be found at `UR3e Robot manipulator/agent_go.py`, `ER Mycobot 280 PI manipulator/agent_go.py`.
 To start the system, simply run the following command in your terminal. Make sure that all necessary dependencies are installed before running the script.
 ```bash
-cd python UR3e Robot manipulator
+cd UR3e Robot manipulator
 python agent_go.py
 ```
-
+```bash
+cd ER Mycobot 280 PI manipulator
+python agent_go.py
+```
 
 
 ## Ongoing Commitment 
