@@ -60,15 +60,23 @@ pip install -r requirements.txt
 ### Running Demo in the Digital World
 Demo code is at `digital_evaluation/main.py`.
 
-To run the demo, use the following command in your terminal:
+To run the digital evaluation, use the following command in your terminal:
 
 ```bash
 python digital_evaluation/main.py --api_key YOUR_API_KEY --base_url BASE_URL --model MODEL_NAME --user_input USER_INPUT --attack_method ATTACK_METHOD --load_malicious_queries True/False
 ```
+#### Available Attack Methods
+
+To select an attack method, use the `--attack_method` argument. You can choose from the following attack methods as described in our paper:
+
+- `none`: No attack is applied.
+- `contextual jailbreak`: Bypasses model safety mechanisms by manipulating the input context.
+- `safety misalignment`: Exploits misalignment between the model’s responses and safety guidelines.
+- `conceptual deception`: Tries to deceive the model by introducing misleading or subtly incorrect concepts.
 
 ---
 
-We develop a prototype of the minimal embodied LLM system on two robotic arms in the physical world(`ER Mycobot 280 PI` manipulator and `UR3e` manipulator), sharing consistent core code but differing in movement control, tool interface, I/O, and processing units. Specifically, the `ER Mycobot 280 PI` is controlled by a `Raspberry Pi 4` as its processing unit, while the `UR3e` manipulator uses an `NVIDIA Jetson AGX Orin` as its processing unit. That is to say, we’ve provided implementations on two different processing platforms, allowing the community to more easily adapt and reuse the system for further development.
+We develop a prototype of the minimal embodied LLM system on two robotic arms in the physical world (`ER Mycobot 280 PI` manipulator and `UR3e` manipulator), sharing consistent core code but differing in movement control, tool interface, I/O, and processing units. Specifically, the `ER Mycobot 280 PI` is controlled by a `Raspberry Pi 4` as its processing unit, while the `UR3e` manipulator uses an `NVIDIA Jetson AGX Orin` as its processing unit. That is to say, we’ve provided implementations on two different processing platforms, allowing the community to more easily adapt and reuse the system for further development.
 
 
 Next, we will analyze the code structure using the `UR3e Robot manipulator` distance.
